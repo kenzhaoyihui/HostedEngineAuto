@@ -23,7 +23,7 @@ def Before_stup():
 
 def Deploy_HE():
 	with settings(warn_only=True, host_string='root@10.73.131.65', password='redhat'):
-		put("goproj/src/github.com/dracher/autoanswer/run", "/root/run")
+		put("/home/zyh/workauto/goproj/src/github.com/dracher/autoanswer/run", "/root/run")
                 run("chmod 755 run")
 		run("./run -i")
 
